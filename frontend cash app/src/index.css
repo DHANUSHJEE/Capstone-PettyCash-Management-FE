@@ -291,3 +291,28 @@ h6 {
     align-items: center;
     color: white;
 }
+
+
+
+/* Responsive styles for tablet */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+/* Responsive styles for iPhone */
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 95%;
+  }
+
+  .link {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #addbutton {
+    width: 100%;
+  }
+}
