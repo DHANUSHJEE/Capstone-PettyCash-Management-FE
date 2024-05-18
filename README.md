@@ -29,12 +29,17 @@ Before you begin, ensure you have met the following requirements:
 - Node.js installed on your local machine.
 - Backend server running and accessible. (Refer to the backend repository for setup instructions)
 
+
+## BACKEND_Deployed URL : https://capstone-pettycash-management-be.onrender.com/
+
+##FRONTEND_Deployed URL : 
+
 ## Installation
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/petty-cash-management-frontend.git
+   git clone [https://github.com/your-username/petty-cash-management-frontend.git](https://github.com/DHANUSHJEE/PettyCash-Management-FE.git)
 Navigate to the project directory:
 
 bash
@@ -51,15 +56,15 @@ Configure the backend API URLs in the config.js file located in the src/componen
 javascript
 Copy code
 export const config = {
-    URL: 'https://your-backend-url/api/user'
+    URL: 'https://capstone-pettycash-management-be.onrender.com/api/user'
 }
 
 export const resetPassword = {
-    URL: 'https://your-backend-url/api/password-reset'
+    URL: 'https://capstone-pettycash-management-be.onrender.com/api/password-reset'
 }
 
 export const transactionURL = {
-    URL: 'https://your-backend-url/api/transaction'
+    URL: 'https://capstone-pettycash-management-be.onrender.com/api/transaction'
 }
 Usage
 To start the development server, run the following command:
@@ -67,7 +72,7 @@ To start the development server, run the following command:
 bash
 Copy code
 npm start
-Visit http://localhost:3000 in your browser to access the application.
+Visit http://localhost:3001 in your browser to access the application.
 
 Folder Structure
 arduino
