@@ -23,7 +23,7 @@
   
     
   
-  "build": "vite build",
+  "build": "npm run build",
   
   
     
