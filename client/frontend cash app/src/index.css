@@ -1,0 +1,293 @@
+/*LOGIN AND REGISTER*/
+
+/* Login.css */
+.user-management-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #f7b733, #fc5c65, #ff6e7f, #ff797f, #ff7e84);
+}
+
+.form-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(to right, #210104, #ffc371);
+  color: #fff;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: #fff;
+}
+
+/* Navigation Links on Hover */
+.nav-link:hover {
+  color: #ccc;
+}
+
+
+
+
+/* Profile Icon */
+.mr-3 {
+  display: flex;
+  align-items: center;
+}
+
+/* Profile Icon Style */
+.mr-3 .anticon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* User Name Style */
+.mr-3 p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#button {
+  background-image: linear-gradient(to right, #ff0015, #f70c0c);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#button:hover {
+  background-image: linear-gradient(to right, #8456e1, #ff5f6d);
+}
+
+
+.content {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .filters {
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+
+    .swith-icon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* icon size  */
+      font-size: 17px;
+      /* icon color  */
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold; 
+      margin-right: 10px;
+
+      .active-icon{
+        color: #ccc;
+      }
+
+    }
+
+   
+
+    .ant-select {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .btn-primary {
+      width: 100%;
+    }
+  }
+.contenttable{
+  width: 100%;
+}
+  .ant-modal {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #addbutton{
+    background-image: linear-gradient(to right, #4a9285, #00ff2f);
+    border: none;
+    color: #fff;
+    margin-left: 50px;
+  }
+  #addbutton:hover{
+    background-image: linear-gradient(to right, #00ff2f, #4a9285);
+  }
+  .btn-primary {
+    transition: background-color 0.3s ease;
+    background-color: #fc5c65;
+
+    &:hover {
+      background: linear-gradient(to right, #ffc371, #ff5f6d);
+    }
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 0 -15px;
+}
+
+.card {
+  margin: 0 15px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+.Progress {
+  margin-top: 10px;
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+.text-light {
+  color: #fff;
+}
+
+h6 {
+  padding: 10px;
+  margin: 0;
+}
+
+.email-verify-container {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.success-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.success-btn {
+  background-color: #fff;
+  color: #f76b1c;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.success-btn:hover {
+  background-color: #f76b1c;
+  color: #fff;
+}
+
+.not-found-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.container-password{
+  background: linear-gradient(to right, #b09ea0, #f3be00);
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
