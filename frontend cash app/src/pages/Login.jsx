@@ -55,7 +55,7 @@ const Login = () => {
                     </button>
                     <div className="link" >
                         <Link to="/register">Not a User? Click here to Register</Link>
-                        <Link to="/password-reset" style={{ float: 'right', marginRight: '35px', marginTop: '10px' }}>Forgot password? click here to reset</Link>
+                        <Link to="/password-reset" style={{ float: 'right', marginRight: '135px', marginTop: '10px' }}>Forgot password? click here to reset</Link>
                     </div>
                 </Form>
             </div>
