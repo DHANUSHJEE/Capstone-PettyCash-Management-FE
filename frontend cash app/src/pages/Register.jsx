@@ -46,6 +46,7 @@ const Register = () => {
     return (
         <div className="user-management-page">
             <div className="form-container">
+                
                 {loading && <Spinner />}
                 <h1>Register Form</h1>
                 <Form
