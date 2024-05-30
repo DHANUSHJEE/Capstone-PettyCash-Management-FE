@@ -5,11 +5,12 @@ import axios from 'axios';
 import Spinner from '../components/Spinner.jsx';
 import { config } from '../components/config/Config.jsx';
 import * as Yup from 'yup';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const [loading, setLoading] = useState(false);
     const [form] = Form.useForm(); // Using Form hooks
-
+const Navigate = useNavigate();
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Name is required'),
         email: Yup.string().email('Invalid email').required('Email is required'),
@@ -26,9 +27,11 @@ const Register = () => {
         try {
             setLoading(true);
             const response = await axios.post(`${config.URL}/register`, values);
-            message.success('Registration successful. Please check your email for verification.');
+            message.success('Registration successful. Please login.');
             setLoading(false);
-            form.resetFields(); // Reset form fields after successful registration
+            form.resetFields(); 
+Navigate('/login');
+
         } catch (error) {
             setLoading(false);
             if (error.response?.status === 400 && error.response.data.message === 'User already exists') {
@@ -55,6 +58,7 @@ const Register = () => {
                     initialValues={{ remember: true }}
                     onFinish={onFinish}
                     onFinishFailed={onFinishFailed}
+                    
                 >
                     <Form.Item
                         label="Name"
@@ -86,6 +90,7 @@ const Register = () => {
                             <Button type="primary" htmlType="submit">
                                 Register
                             </Button>
+                            
                         </div>
                     </Form.Item>
                 </Form>

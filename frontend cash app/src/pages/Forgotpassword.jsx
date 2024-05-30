@@ -4,24 +4,29 @@ import { useState } from 'react';
 import axios from 'axios';
 import Spinner from '../components/Spinner.jsx';
 import { resetPassword } from '../components/config/Config.jsx';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Forgotpassword = () => {
     
     const [msg, setMsg] = useState('');
     const [error, setError] = useState('');
-    
     const [email, setEmail] = useState('');
-
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
     const [loading, setLoading] = useState(false);
+    const Navigate = useNavigate();
+
 
     const submitHandler = async (values) => {
     
         try {
             const url = `${resetPassword.URL}/forgot-password`;
-            const { data } = await axios.post(url, { email });
+            const { data } = await axios.post(url, { email, password, confirmPassword });
             setMsg(data.message);
             setError('');
+            setLoading(false)
+            Navigate('/login')
+
         } catch (error) {
             if (
                 error.response &&
@@ -45,6 +50,15 @@ const Forgotpassword = () => {
                     <Input type="email" placeholder="Enter your email" 
                     onChange={(e) => setEmail(e.target.value)} value={email} />
                 </Form.Item>
+                <Form.Item label="Password :" name='password' required>
+                    <Input type="password" placeholder="Enter your password"
+                        onChange={(e) => setPassword(e.target.value)} value={password} />
+                </Form.Item>
+                <Form.Item label="Confirm Password :" name='confirmPassword' required>
+                    <Input type="password" placeholder="Enter your confirm password"
+                        onChange={(e) => setConfirmPassword(e.target.value)} value={password}  />
+                </Form.Item>
+
                 
                 {error && <p style={{ color: 'red' }}>{error}</p>}
                 {msg && <p style={{ color: 'green' }}>{msg}</p>}
