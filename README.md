@@ -32,7 +32,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## BACKEND_Deployed URL : https://capstone-pettycash-management-be.onrender.com/
 
-##FRONTEND_Deployed URL : 
+##FRONTEND_Deployed URL : https://main--pettycm.netlify.app/
 
 ## Installation
 
